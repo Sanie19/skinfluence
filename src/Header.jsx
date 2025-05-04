@@ -3,10 +3,12 @@ import { Link } from 'react-router-dom';
 import logo from './assets/logo.png';
 import './App.css';
 
-const Header = () => {
+function Header() {
     const [isOpen, setIsOpen] = useState(false);
 
-    const toggleMenu = () => setIsOpen(!isOpen);
+    const toggleMenu = () => {
+        setIsOpen(!isOpen);
+    };
 
     return (
         <header className="navbar">
@@ -23,10 +25,9 @@ const Header = () => {
                 <Link to="/" onClick={() => setIsOpen(false)}>Home</Link>
                 <Link to="/about" onClick={() => setIsOpen(false)}>About</Link>
                 <Link to="/contact" onClick={() => setIsOpen(false)}>Contact</Link>
-                <Link to="/test" className="test-button" onClick={() => setIsOpen(false)}>Take Test</Link>
             </nav>
         </header>
     );
-};
+}
 
 export default Header;

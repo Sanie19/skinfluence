@@ -2,6 +2,8 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './App.css';
 import logo from './assets/logo.png';
+import aiSkinImage from './assets/Ai-Skin-Blog-Landscape.webp';
+import techImage from './assets/Tech.webp';
 
 function Home() {
     return (
@@ -23,7 +25,7 @@ function Home() {
 
                 {/* Main Section */}
                 <main className="main-section">
-                    <h1 className="main-title">Find Your Perfect Skincare Match </h1>
+                    <h1 className="main-title">Find Your Perfect Skincare Match</h1>
                     <p className="main-description">
                         Discover products that actually fit your skin. Start with our smart AI skin test!
                     </p>
@@ -33,16 +35,17 @@ function Home() {
                     </div>
 
                     <div className="brand-buttons">
-                        <Link to="/garnier" className="brand-box">Garnier </Link>
-                        <Link to="/cerave" className="brand-box">CeraVe </Link>
-                        <Link to="/theordinary" className="brand-box">The Ordinary </Link>
+                        <Link to="/garnier" className="brand-box">Garnier</Link>
+                        <Link to="/cerave" className="brand-box">CeraVe</Link>
+                        <Link to="/theordinary" className="brand-box">The Ordinary</Link>
+                    </div>
+
+                    {/* ✅ Image Section */}
+                    <div className="image-section">
+                        <img src={aiSkinImage} alt="AI Skin Analysis" className="info-image" />
+                        <img src={techImage} alt="Tech Analysis" className="info-image" />
                     </div>
                 </main>
-
-                {/* Footer */}
-                <footer className="footer">
-                    © 2025 Skinnfluence · All rights reserved.
-                </footer>
             </div>
         </div>
     );

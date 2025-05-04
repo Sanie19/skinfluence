@@ -1,5 +1,9 @@
 import React from 'react';
-import './App.css'; // Make sure this includes the CSS below
+import './App.css'; // Ensure this file contains the styles below
+
+import instagramIcon from './assets/icons/instagram.jpg';
+import twitterIcon from './assets/icons/twitter.jpg';
+import facebookIcon from './assets/icons/facebook.jpg';
 
 const Footer = () => {
     return (
@@ -13,7 +17,7 @@ const Footer = () => {
                     rel="noopener noreferrer"
                     aria-label="Instagram"
                 >
-                    <i className="fa-brands fa-instagram"></i>
+                    <img src={instagramIcon} alt="Instagram" className="social-img" />
                 </a>
                 <a
                     href="https://www.twitter.com/yourusername"
@@ -21,7 +25,7 @@ const Footer = () => {
                     rel="noopener noreferrer"
                     aria-label="Twitter"
                 >
-                    <i className="fa-brands fa-twitter"></i>
+                    <img src={twitterIcon} alt="Twitter" className="social-img" />
                 </a>
                 <a
                     href="https://www.facebook.com/yourusername"
@@ -29,7 +33,7 @@ const Footer = () => {
                     rel="noopener noreferrer"
                     aria-label="Facebook"
                 >
-                    <i className="fa-brands fa-facebook-f"></i>
+                    <img src={facebookIcon} alt="Facebook" className="social-img" />
                 </a>
             </div>
         </footer>

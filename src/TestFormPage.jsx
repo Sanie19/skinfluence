@@ -148,7 +148,7 @@ Your task:
                 </form>
             </div>
 
-            <Footer />
+
         </>
     );
 }
