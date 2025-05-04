@@ -8,7 +8,7 @@ function TestFormPage() {
     const [frontPhoto, setFrontPhoto] = useState('');
     const [leftPhoto, setLeftPhoto] = useState('');
     const [rightPhoto, setRightPhoto] = useState('');
-
+    const [aiText, setAiText] = useState('');
     const questions = [
         "How does your skin feel a few hours after cleansing (tight, oily, balanced)?",
         "Do you notice visible shine on your face throughout the day? If yes, where?",
@@ -56,7 +56,7 @@ function TestFormPage() {
         e.preventDefault();
 
         const answers = Array.from(document.querySelectorAll('input[type="text"]')).map(input => input.value);
-        const email = document.querySelector('input[type="email"]').value;
+        // const email = document.querySelectorAlltor('input[type="email"]').value;
 
         const prompt = `
 You are a professional skincare assistant AI.
@@ -101,14 +101,13 @@ Your task:
 
             const data = await response.json();
             const aiText = data.choices[0].message.content;
-
+            setAiText(aiText);
             alert('AI Recommendation:\n\n' + aiText);
         } catch (error) {
             console.error('AI request failed:', error);
             alert('Something went wrong. Please try again.');
         }
     };
-
     return (
         <>
             <Header />
@@ -146,6 +145,10 @@ Your task:
 
                     <button type="submit">Submit</button>
                 </form>
+
+                <div>
+                    {aiText ? aiText : ''}
+                </div>
             </div>
 
 

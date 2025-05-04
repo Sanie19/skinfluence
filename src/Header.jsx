@@ -25,6 +25,9 @@ function Header() {
                 <Link to="/" onClick={() => setIsOpen(false)}>Home</Link>
                 <Link to="/about" onClick={() => setIsOpen(false)}>About</Link>
                 <Link to="/contact" onClick={() => setIsOpen(false)}>Contact</Link>
+                <Link to="/cart" className="cart-icon" onClick={() => setIsOpen(false)}>
+                    <i className="fas fa-shopping-cart"></i>
+                </Link>
             </nav>
         </header>
     );
