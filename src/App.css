@@ -524,6 +524,7 @@ body {
   margin-left: 10px;
   font-size: 1.5rem;
   font-weight: bold;
+  color: white;
 }
 
 .nav-links a {
@@ -746,8 +747,79 @@ body {
 
 .social-icons a:hover {
   background-color: #ffafcc;
-  color: white;
+  color: black;
   transform: scale(1.1);
 }
+/* Default styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 40px;
+  background-color: #555;
+  flex-wrap: wrap;
+}
 
+.hamburger {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
 
+/* Mobile styles */
+/* Mobile Header Responsiveness */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 16px;
+    background-color: #333;
+  }
+
+  .hamburger {
+    display: block;
+    font-size: 24px;
+    color: white;
+    margin-left: auto;
+    cursor: pointer;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background: #444;
+    margin-top: 10px;
+    border-radius: 8px;
+    padding: 0;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-links a {
+    color: white;
+    padding: 14px;
+    text-decoration: none;
+    text-align: center;
+    border-bottom: 1px solid #555;
+  }
+
+  .nav-links a:last-child {
+    border-bottom: none;
+  }
+
+  .test-button {
+    background: #ff69b4;
+    color: white;
+    margin: 10px auto;
+    border-radius: 8px;
+    padding: 10px 20px;
+  }
+}
+
+/* Default - hide hamburger icon on desktop */
+.hamburger {
+  display: none;
+}

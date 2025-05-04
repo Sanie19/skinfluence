@@ -1,21 +1,22 @@
 <!doctype html>
 <html lang="en">
 <head>
-
   <meta charset="UTF-8" />
-  <link
-          rel="stylesheet"
-          href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css"
-  />
-
-
-
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Skincare App</title>
 
+  <!-- ✅ Font Awesome (Only one version included) -->
+  <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+          integrity="sha512-papEr5ldONR03fL5ixp3UeP7+5SLbA7AG2+9Z1YgF6JvS5nN4E+SYK1sP5c6pbKHgG8z6YFMCUz0VjRH1OZ9Ug=="
+          crossorigin="anonymous"
+          referrerpolicy="no-referrer"
+  />
+
   <!-- ✅ Uploadcare setup -->
   <script type="text/javascript">
-    UPLOADCARE_PUBLIC_KEY = 'ffcae7ccb0205603bccd'; // 🔁 Replace this with your actual key
+    UPLOADCARE_PUBLIC_KEY = 'ffcae7ccb0205603bccd';
   </script>
   <script src="https://ucarecdn.com/libs/widget/3.x/uploadcare.full.min.js"></script>
 </head>
@@ -23,7 +24,7 @@
 <body>
 <div id="root"></div>
 
-<!-- Main React Entry -->
+<!-- ✅ React will mount your app here -->
 <script type="module" src="/src/main.jsx"></script>
 </body>
 </html>

@@ -142,8 +142,7 @@ Your task:
                         </div>
                     ))}
 
-                    <label>Email:</label>
-                    <input type="email" name="Email" placeholder="you@example.com" required />
+
 
                     <button type="submit">Submit</button>
                 </form>

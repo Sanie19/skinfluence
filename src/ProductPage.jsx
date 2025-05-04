@@ -161,20 +161,20 @@ const products = {
         },
         {
             name: "The Ordinary’s Mineral UV Filters SPF 30 ",
-            price: "$7",
+            price: "$26.50",
             desc: "The Ordinary’s Mineral UV Filters SPF 30 with Antioxidants is a mineral-based sunscreen designed to provide broad-spectrum protection against UVA and UVB rays. ",
             image: sunscreen2
         },
         {
-            name: "The Ordinary Caffeine Solution 5% + EGCG",
-            price: "$7",
+            name: "Multi-Peptide + HA Serum",
+            price: "$27",
             desc: "Reduces eye puffiness and dark circles.",
             image: multi_peptide
         },
         {
             name: "The Ordinary Caffeine Solution 5% + EGCG",
-            price: "$7",
-            desc: "Reduces eye puffiness and dark circles.",
+            price: "$29.50",
+            desc: "Addresses multiple signs of aging and improves skin elasticity.",
             image: mandelic
         },
 
