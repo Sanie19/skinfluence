@@ -1,0 +1,108 @@
+[
+    {
+      "id": 1,
+      "brand": "cerave",
+      "name": "Moisturizing Cream",
+      "price": 12.99,
+      "image": "/images/cerave_moisturizing_cream.webp"
+    },
+    {
+      "id": 2,
+      "brand": "cerave",
+      "name": "Hydrating Facial Cleanser",
+      "price": 15.49,
+      "image": "/images/cerave.jpg"
+    },
+    {
+      "id": 3,
+      "brand": "cerave",
+      "name": "Foaming Facial Cleanser",
+      "price": 9.99,
+      "image": "/images/cleanser_for_combination_skin.webp"
+    },
+    {
+        "id": 4,
+        "brand": "cerave",
+        "name": "Moisturizing Cream",
+        "price": 9.99,
+        "image": "/images/vitamin_c.webp"
+    },
+    {
+        "id": 5,
+        "brand": "cerave",
+        "name": "Sunscreen",
+        "price": 9.99,
+        "image": "/images/sunscreen.webp"
+    },
+    {
+        "id": 6,
+        "brand": "cerave",
+        "name": "Hydrating Toner",
+        "price": 9.99,
+        "image": "/images/toner.webp"
+    },
+    {
+        "id": 7,
+        "brand": "ordinary",
+        "name": "Hydrating Serum",
+        "price": 9.99,
+        "image": "/images/serum_o.webp"
+    },
+    {
+        "id": 8,
+        "brand": "ordinary",
+        "name": "Exfoliating Scrub",
+        "price": 9.99,
+        "image": "/images/moisturize_o.webp"
+    },
+    {
+        "id": 9,
+        "brand": "ordinary",
+        "name": "Hydrating Eye Cream",
+        "price": 9.99,
+        "image": "/images/sunscreen_o.webp"
+    },
+    {
+        "id": 10,
+        "brand": "ordinary",
+        "name": "Lip Balm",
+        "price": 9.99,
+        "image": "/images/toner_o.webp"
+    },
+    {
+        "id": 11,
+        "brand": "garnier",
+        "name": "Hydrating Face Mask",
+        "price": 9.99,
+        "image": "/images/toner_g.png"
+    },
+    {
+        "id": 12,
+        "brand": "garnier",
+        "name": "Exfoliating Face Mask",
+        "price": 9.99,
+        "image": "/images/vitamin_g.webp"
+    },
+    {
+        "id": 13,
+        "brand": "garnier",
+        "name": "Hydrating Body Lotion",
+        "price": 9.99,
+        "image": "/images/sunscreen_g.jpg"
+    },
+    {
+        "id": 14,
+        "brand": "garnier",
+        "name": "Exfoliating Body Scrub",
+        "price": 9.99,
+        "image": "/images/serum_g.webp"
+    },
+    {
+        "id": 15,
+        "brand": "garnier",
+        "name": "Hydrating Foot Cream",
+        "price": 9.99,
+        "image": "/images/moisturizer_g.webp"
+    }
+]
+  
