@@ -14,7 +14,7 @@ function Header() {
         <header className="navbar">
             <div className="logo-brand">
                 <img src={logo} alt="Logo" className="logo" />
-                <span className="brand-name">SkinNova</span>
+                <span className="brand-name">Skinfluence</span>
             </div>
 
             <div className="hamburger" onClick={toggleMenu}>
