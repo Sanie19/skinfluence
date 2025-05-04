@@ -14,7 +14,7 @@ function Home() {
                 <header className="navbar">
                     <div className="logo-brand">
                         <img src={logo} alt="Logo" className="logo" />
-                        <span className="brand-name">Skinnfluence</span>
+                        <span className="brand-name">SkinNova</span>
                     </div>
                     <nav className="nav-links">
                         <Link to="/about">About</Link>
@@ -29,6 +29,11 @@ function Home() {
                     <p className="main-description">
                         Discover products that actually fit your skin. Start with our smart AI skin test!
                     </p>
+
+                    <h2 className="disclaimer">
+                        ⚠️ This tool is for informational purposes only and not a substitute for professional dermatological advice.
+                    </h2>
+
 
                     <div className="center-button-section">
                         <Link to="/test" className="cta-button">Start My Skin Test</Link>

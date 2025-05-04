@@ -8,7 +8,8 @@ function TestFormPage() {
     const [frontPhoto, setFrontPhoto] = useState('');
     const [leftPhoto, setLeftPhoto] = useState('');
     const [rightPhoto, setRightPhoto] = useState('');
-    const [aiText, setAiText] = useState('');
+    const [aiResult, setAiResult] = useState('');
+
     const questions = [
         "How does your skin feel a few hours after cleansing (tight, oily, balanced)?",
         "Do you notice visible shine on your face throughout the day? If yes, where?",
@@ -56,7 +57,6 @@ function TestFormPage() {
         e.preventDefault();
 
         const answers = Array.from(document.querySelectorAll('input[type="text"]')).map(input => input.value);
-        // const email = document.querySelectorAlltor('input[type="email"]').value;
 
         const prompt = `
 You are a professional skincare assistant AI.
@@ -80,7 +80,7 @@ Your task:
   "skinType": "...",
   "analysis": "...",
   "recommendations": [
-    { "name": "...", "description": "..." }
+    { "name": "...", "description": "..." },
   ]
 }
 `;
@@ -101,17 +101,16 @@ Your task:
 
             const data = await response.json();
             const aiText = data.choices[0].message.content;
-            setAiText(aiText);
-            alert('AI Recommendation:\n\n' + aiText);
+            setAiResult(aiText);
         } catch (error) {
             console.error('AI request failed:', error);
             alert('Something went wrong. Please try again.');
         }
     };
+
     return (
         <>
             <Header />
-
             <div className="test-form-container">
                 <h2>Upload Face Photos</h2>
                 <form onSubmit={handleSubmit}>
@@ -141,16 +140,17 @@ Your task:
                         </div>
                     ))}
 
-
-
                     <button type="submit">Submit</button>
                 </form>
 
-                <div>
-                    {aiText ? aiText : ''}
-                </div>
+                {/* ✅ AI Result shown below form */}
+                {aiResult && (
+                    <div className="ai-result-box">
+                        <h3>🧠 AI Recommendation</h3>
+                        <pre>{aiResult}</pre>
+                    </div>
+                )}
             </div>
-
 
         </>
     );

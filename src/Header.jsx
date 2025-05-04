@@ -14,7 +14,7 @@ function Header() {
         <header className="navbar">
             <div className="logo-brand">
                 <img src={logo} alt="Logo" className="logo" />
-                <span className="brand-name">Skinnfluence</span>
+                <span className="brand-name">SkinNova</span>
             </div>
 
             <div className="hamburger" onClick={toggleMenu}>
@@ -25,6 +25,8 @@ function Header() {
                 <Link to="/" onClick={() => setIsOpen(false)}>Home</Link>
                 <Link to="/about" onClick={() => setIsOpen(false)}>About</Link>
                 <Link to="/contact" onClick={() => setIsOpen(false)}>Contact</Link>
+
+                {/* 🛒 Add to Cart Icon Button */}
                 <Link to="/cart" className="cart-icon" onClick={() => setIsOpen(false)}>
                     <i className="fas fa-shopping-cart"></i>
                 </Link>
