@@ -19,7 +19,7 @@ function Home() {
                     <nav className="nav-links">
                         <Link to="/about">About</Link>
                         <Link to="/contact">Contact</Link>
-                        <Link to="/test" className="test-button">Take Test</Link>
+
                     </nav>
                 </header>
 
